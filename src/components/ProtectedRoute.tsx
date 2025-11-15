@@ -8,7 +8,6 @@ export default function ProtectedRoute({
 }) {
   const { isAuthenticated, loadingAuth } = useAuth();
 
-  // ⏳ Esperar AuthContext (evita 401 inicial)
   if (loadingAuth) return null;
 
   if (!isAuthenticated) return <Navigate to="/login" />;
