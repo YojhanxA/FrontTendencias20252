@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://tendencias20252-1.onrender.com/api/$1" }
+  ]
+}
